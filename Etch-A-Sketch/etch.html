@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ETCH-A-SKETCH</title>
+    <link rel="stylesheet" href="etch.css">
+  </head>
+  <body>
+    <header>
+      <h1>Etch-a-Sketcher</h1>      
+    </header>
+    <div class="button"> 
+      <button class="blackColor">Black Color</button>
+      <button class="randomColor">Random Color</button>
+      <button class="clear">Clear</button>
+    </div> 
+    <div class="bord">
+      <div class="colorControl"> 
+        <div class="colors">
+          <div class="reder">
+            <p class="RedN">0</p>
+            <input type="range" name="color-range" class="color-range red" min="0" max="255">
+          </div>
+          <div class="greener">
+            <p class="GreenN">0</p>
+            <input type="range" name="color-range" class="color-range green" min="0" max="255">
+          </div>
+          <div class="bluer">
+            <p class="BlueN">0</p>
+            <input type="range" name="color-range" class="color-range blue" min="0" max="255">
+          </div>
+        </div>
+      </div>
+      <div class="boxer">
+        <button class="start">Start</button>
+        <div class="container"></div>
+        
+      </div>
+      <div class="gridSize">
+        <p class="sizeV">16</p>
+        <input type="range" name="size" value='16' class="size" min = '2' max = '100'>
+        <label for="input" class="lab">Grid Size</label>
+      </div>
+    </div>
+    <script src="etch.js"></script>
+  </body>
+</html>
